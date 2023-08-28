@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Nav Trab</title>
+
+    <style>
+        body{
+            text-align: center;
+        }
+        #ass{
+            border: none;
+            background-color: transparent;
+        }
+
+        .bot{
+            border: solid 1px black;
+            border-radius: 12px;
+            background-color: gainsboro;
+            padding: 15px;
+            width: 150px;
+            height: 10px;
+        }
+        .cubo{
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        #viv{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    <h1>EXERCÍCIOS</h1>
+
+    <div id="viv">
+        <div class="cubo">
+            <button class="bot">
+                while 1
+            </button>
+        </div>
+        <div class="cubo">
+            <button class="bot">
+                foreach 1
+            </button>
+            <button class="bot">
+                foreach 2
+            </button>
+        </div>
+        <div class="cubo">
+            <button class="bot">
+                for  1
+            </button>
+            <button class="bot">
+                for 2
+            </button>
+        </div>
+        <div class="cubo">
+            <button class="bot">
+                break/continue
+            </button>
+        </div>
+    </div>
+
+    <button id="ass">
+        <img src="https://media.tenor.com/qJRMLPlR3_8AAAAi/maxwell-cat.gif">
+    </button>
+    <script>
+        While = document.getElementsByClassName('bot')[0]
+        ForEach = document.getElementsByClassName('bot')[1]
+        ForEach2 = document.getElementsByClassName('bot')[2]
+        For = document.getElementsByClassName('bot')[3]
+        For2 = document.getElementsByClassName('bot')[4]
+        BC = document.getElementsByClassName('bot')[5]
+        Monday = document.getElementById('ass')
+
+        While.addEventListener('click', W)
+        ForEach.addEventListener('click', FE)
+        ForEach2.addEventListener('click', FE2)
+        For.addEventListener('click', F)
+        For2.addEventListener('click', F2)
+        BC.addEventListener('click', Bc)
+        Monday.addEventListener('click', MooM)
+
+        function W() {
+            window.open('php2.php')
+        }
+
+        function FE(){
+            window.open('foreachtrabalho.php')
+        }
+        function FE2(){
+            window.open('indexForEachM.php')
+        }
+
+        function F(){
+            window.open('Luis_trabalho.php')
+        }
+        function F2(){
+            window.open('Luis_trabalho_2.php')
+        }
+
+
+        function Bc(){
+            window.open('Break_continue_trabalho.php')
+        }
+
+        function MooM(){
+            window.open('https://media.tenor.com/RTL_C3SWOUEAAAAC/monday-left-me-broken-cat.gif')
+        }
+    </script>
+
+</body>
+</html>
